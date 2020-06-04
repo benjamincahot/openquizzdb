@@ -13,7 +13,7 @@ let src2 = '../api-openquizzdb/assets/lepers.gif';
     .then(response => response.json())
     .then((response) => {
       // Récupération des données de l'API (stocké dans un array)
-      question.innerText = response.results[0].question;
+      question.innerHTML = response.results[0].question;
       category.innerText = response.results[0].category;
       correct.innerText = response.results[0].correct_answer;
       wrong.innerText = response.results[0].incorrect_answers;
