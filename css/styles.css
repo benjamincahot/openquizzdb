@@ -1,101 +1,54 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
-
-/*
- * Globals
- */
-
-/* Links */
-a,
-a:focus,
-a:hover {
-  color: #fff;
+body {
+  height: 100% !important;
 }
 
-/* Custom default button */
-.btn-secondary,
-.btn-secondary:hover,
-.btn-secondary:focus {
-  color: #333;
-  text-shadow: none; /* Prevent inheritance from `body` */
+:root {
+  --jumbotron-padding-y: 3rem;
+}
+
+.jumbotron {
+  padding-top: var(--jumbotron-padding-y);
+  padding-bottom: var(--jumbotron-padding-y);
+  margin-bottom: 0;
   background-color: #fff;
-  border: .05rem solid #fff;
+}
+@media (min-width: 768px) {
+  .jumbotron {
+    padding-top: calc(var(--jumbotron-padding-y) * 2);
+    padding-bottom: calc(var(--jumbotron-padding-y) * 2);
+  }
 }
 
-
-/*
- * Base structure
- */
-
-html,
-body {
-  height: 100%;
-  background-color: #191414 !important;
-  font-family: 'Source Sans Pro', sans-serif !important;
+.jumbotron p:last-child {
+  margin-bottom: 0;
 }
 
-body {
-  display: -ms-flexbox;
-  display: flex;
-  color: #fff;
-  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
-  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+.jumbotron-heading {
+  font-weight: 300;
 }
 
-.cover-container {
-  max-width: 42em;
-  display: flex;
+.jumbotron .container {
+  max-width: 40rem;
 }
 
-
-/*
- * Header
- */
-.masthead {
-  margin-bottom: 2rem;
+.card-text {
+  text-align: center !important;
 }
 
-.masthead-brand {
-  color: #FFFFFF;
+.card-img-top {
+  height: 225px;
+  color: white;
+  width: 100%;
+  display: block;
+  text-align: center;
 }
 
-.nav-masthead .nav-link {
-  padding: .25rem 0;
-  font-weight: 700;
-  color: #FFFFFF;
-  background-color: transparent;
-  border-bottom: .25rem solid transparent;
+.misterv {
+  margin-left: 90px;
+  padding-bottom: 20px;
 }
 
-.nav-masthead .nav-link:hover,
-.nav-masthead .nav-link:focus {
-  border-bottom-color: #1DB954;
-  border-radius: 1px;
-}
-
-.nav-masthead .nav-link + .nav-link {
-  margin-left: 1rem;
-}
-
-.nav-masthead .active {
-  color: #fff;
-  border-bottom-color: #fff;
-}
-/*
- * Cards
- */
-.card {
-  width: 300px;
-  margin: 15px;
-}
-
-
-/*
- * Footer
- */
-.mastfoot {
-  color: #FFFFFF;
-}
-
-.link {
-  color: #1DB954
+.lepers {
+  margin-left: 60px;
+  padding-bottom: 20px;
 }
